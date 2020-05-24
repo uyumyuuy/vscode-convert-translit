@@ -1,65 +1,49 @@
-# convert-assyriology-translit README
+# convert-assyriology-translit
 
-This is the README for your extension "convert-assyriology-translit". After writing up a brief description, we recommend including the following sections.
+This extension is to convert assyriological(sumerian/akkadian) transliteration text from Ascii-style to unicode.
+
+such as from
+
+```
+{g~ic}ig-sal e2-us2-gid3-da e2-an-na-ka gub-ba {d}dumu-zi gaba-na mu-ri
+```
+
+to
+
+```
+{g̃iš}ig-sal é-ús-gìd-da é-an-na-ka gub-ba {d}dumu-zi gaba-na mu-ri
+```
+
+### How to use
+
+- Select transliteration text
+- ctrl(cmd) + shift + p
+- > Convert Transliteral from ASCII to Unicode
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+This is our convert table.
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+| ascii | unicode |
+| ----- | ------- |
+| c     | š       |
+| sz    | š       |
+| s,    | ṣ       |
+| t,    | ṭ       |
+| j     | ŋ       |
+| g~    | g̃       |
+| h     | ḫ       |
+| a^    | â       |
+| a^    | â       |
+| i^    | î       |
+| u^    | û       |
+| e^    | ê       |
+| a~    | ā       |
+| i~    | ī       |
+| u~    | ū       |
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Initial release

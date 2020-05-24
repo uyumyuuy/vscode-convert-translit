@@ -4,11 +4,19 @@
   "description": "The extension convert assyriological transliteration from ascii-style to unicode",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.45.0"
+    "vscode": "^1.0.0"
   },
+  "license": "MIT",
   "categories": [
     "Other"
   ],
+  "author": {
+    "name": "uyum"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uyumyuuy/vscode-convert-translit.git"
+  },
   "activationEvents": [
     "onCommand:convert-assyriology-translit.convert",
     "onCommand:convert-assyriology-translit.convert_index_to_accent",
