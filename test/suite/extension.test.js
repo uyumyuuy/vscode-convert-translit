@@ -13,8 +13,14 @@ suite("Extension Test Suite", () => {
   //vscode.window.showInformationMessage("Start all tests.");
 
   test("Convert test", () => {
-    assert.equal(convert("cszs,t,jg~ha^i^u^e^a~i~u~e~"), "ššṣṭŋg̃ḫâîûêāīūē");
-    assert.equal(convert("CSZS,T,JG~HA^I^U^E^A~I~U~E~"), "ŠŠṢṬŊG̃ḪÂÎÛÊĀĪŪĒ");
+    assert.equal(
+      convert("cszs,t,t_jg~ha^i^u^e^o^a~i~u~e~o~"),
+      "ššṣṭṯŋg̃ḫâîûêôāīūēō"
+    );
+    assert.equal(
+      convert("CSZS,T,T_JG~HA^I^U^E^O^A~I~U~E~O~"),
+      "ŠŠṢṬṮŊG̃ḪÂÎÛÊÔĀĪŪĒŌ"
+    );
   });
 
   test("Convert Index to Accent", () => {

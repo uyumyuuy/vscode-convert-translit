@@ -7,6 +7,8 @@ function convert(text) {
   text = text.replace(/S,/g, "Ṣ");
   text = text.replace(/t,/g, "ṭ");
   text = text.replace(/T,/g, "Ṭ");
+  text = text.replace(/t_/g, "ṯ");
+  text = text.replace(/T_/g, "Ṯ");
   text = text.replace(/j/g, "ŋ");
   text = text.replace(/J/g, "Ŋ");
   text = text.replace(/g~/g, "g̃");
@@ -17,10 +19,12 @@ function convert(text) {
   text = text.replace(/i^/g, "î");
   text = text.replace(/u^/g, "û");
   text = text.replace(/e^/g, "ê");
+  text = text.replace(/o^/g, "ô");
   text = text.replace(/a~/g, "ā");
   text = text.replace(/i~/g, "ī");
   text = text.replace(/u~/g, "ū");
-  text = text.replace(/ge~/g, "ē");
+  text = text.replace(/e~/g, "ē");
+  text = text.replace(/o~/g, "ō");
 
   return text;
 }

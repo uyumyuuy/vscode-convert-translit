@@ -30,6 +30,7 @@ This is our convert table.
 | sz    | š       |
 | s,    | ṣ       |
 | t,    | ṭ       |
+| t_    | ṯ       |
 | j     | ŋ       |
 | g~    | g̃       |
 | h     | ḫ       |
@@ -37,10 +38,12 @@ This is our convert table.
 | a^    | â       |
 | i^    | î       |
 | u^    | û       |
+| o^    | ô       |
 | e^    | ê       |
 | a~    | ā       |
 | i~    | ī       |
 | u~    | ū       |
+| o~    | ō       |
 
 ## Release Notes
 
