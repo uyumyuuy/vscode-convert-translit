@@ -34,6 +34,7 @@ This is our convert table.
 | j     | ŋ       |
 | g~    | g̃       |
 | h     | ḫ       |
+| h,    | ḥ       |
 | a^    | â       |
 | a^    | â       |
 | i^    | î       |
@@ -44,9 +45,19 @@ This is our convert table.
 | i~    | ī       |
 | u~    | ū       |
 | o~    | ō       |
+| '     | ʿ       |
+| `     | ʾ       |
 
 ## Release Notes
 
 ### 1.0.0
 
 Initial release
+
+### 1.1.0
+
+Add ḥ, ʿ
+
+### 1.2.0
+
+Add ʾ

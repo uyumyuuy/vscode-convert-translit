@@ -14,8 +14,8 @@ suite("Extension Test Suite", () => {
 
   test("Convert test", () => {
     assert.equal(
-      convert("cszs,t,t_jg~ha^i^u^e^o^a~i~u~e~o~"),
-      "ššṣṭṯŋg̃ḫâîûêôāīūēō"
+      convert("cszs,t,t_jg~hh,a^i^u^e^o^a~i~u~e~o~'"),
+      "ššṣṭṯŋg̃ḫḥâîûêôāīūēōʿ"
     );
     assert.equal(
       convert("CSZS,T,T_JG~HA^I^U^E^O^A~I~U~E~O~"),

@@ -13,6 +13,7 @@ function convert(text) {
   text = text.replace(/J/g, "Ŋ");
   text = text.replace(/g~/g, "g̃");
   text = text.replace(/G~/g, "G̃");
+  text = text.replace(/h,/g, "ḥ");
   text = text.replace(/h/g, "ḫ");
   text = text.replace(/H/g, "Ḫ");
   text = text.replace(/a^/g, "â");
@@ -25,6 +26,8 @@ function convert(text) {
   text = text.replace(/u~/g, "ū");
   text = text.replace(/e~/g, "ē");
   text = text.replace(/o~/g, "ō");
+  text = text.replace(/'/g, "ʿ"); //ayin
+  text = text.replace(/`/g, "ʾ"); //aleph
 
   return text;
 }
