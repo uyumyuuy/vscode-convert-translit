@@ -7,7 +7,7 @@ const {
   convert,
   convert_index_to_accent,
   convert_accent_to_index,
-} = require("../convert");
+} = require("../../convert");
 
 suite("Extension Test Suite", () => {
   //vscode.window.showInformationMessage("Start all tests.");
