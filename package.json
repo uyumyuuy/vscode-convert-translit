@@ -2,7 +2,7 @@
   "name": "convert-assyriology-translit",
   "displayName": "Convert Assyriology Translit",
   "description": "The extension convert assyriological transliteration from ascii-style to unicode",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "engines": {
     "vscode": "^1.0.0"
   },
@@ -25,7 +25,9 @@
   "activationEvents": [
     "onCommand:convert-assyriology-translit.convert",
     "onCommand:convert-assyriology-translit.convert_index_to_accent",
-    "onCommand:convert-assyriology-translit.convert_accent_to_index"
+    "onCommand:convert-assyriology-translit.convert_accent_to_index",
+    "onCommand:convert-assyriology-translit.convert_to_superscript",
+    "onCommand:convert-assyriology-translit.convert_to_subscript"
   ],
   "main": "./extension.js",
   "contributes": {
@@ -41,6 +43,14 @@
       {
         "command": "convert-assyriology-translit.convert_accent_to_index",
         "title": "Convert Transliteral from Accent to Index"
+      },
+      {
+        "command": "convert-assyriology-translit.convert_to_superscript",
+        "title": "Convert alphabet and numbers to Superscript"
+      },
+      {
+        "command": "convert-assyriology-translit.convert_to_subscript",
+        "title": "Convert numbers to Subscript"
       }
     ]
   },

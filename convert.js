@@ -42,6 +42,88 @@ function convert(text) {
   return text;
 }
 
+function to_subscript(text) {
+  text = text.replace(/0/g, "₀");
+  text = text.replace(/1/g, "₁");
+  text = text.replace(/2/g, "₂");
+  text = text.replace(/3/g, "₃");
+  text = text.replace(/4/g, "₄");
+  text = text.replace(/5/g, "₅");
+  text = text.replace(/6/g, "₆");
+  text = text.replace(/7/g, "₇");
+  text = text.replace(/8/g, "₈");
+  text = text.replace(/9/g, "₉");
+  text = text.replace(/x/g, "ₓ");
+  return text;
+}
+
+function to_superscript(text) {
+  text = text.replace(/0/g, "⁰");
+  text = text.replace(/1/g, "¹");
+  text = text.replace(/2/g, "²");
+  text = text.replace(/3/g, "³");
+  text = text.replace(/4/g, "⁴");
+  text = text.replace(/5/g, "⁵");
+  text = text.replace(/6/g, "⁶");
+  text = text.replace(/7/g, "⁷");
+  text = text.replace(/8/g, "⁸");
+  text = text.replace(/9/g, "⁹");
+  text = text.replace(/A/g, "ᴬ");
+  text = text.replace(/B/g, "ᴮ");
+  text = text.replace(/D/g, "ᴰ");
+  text = text.replace(/E/g, "ᴱ");
+  text = text.replace(/G/g, "ᴳ");
+  text = text.replace(/H/g, "ᴴ");
+  text = text.replace(/I/g, "ᴵ");
+  text = text.replace(/J/g, "ᴶ");
+  text = text.replace(/K/g, "ᴷ");
+  text = text.replace(/L/g, "ᴸ");
+  text = text.replace(/M/g, "ᴹ");
+  text = text.replace(/N/g, "ᴺ");
+  text = text.replace(/O/g, "ᴼ");
+  text = text.replace(/P/g, "ᴾ");
+  text = text.replace(/R/g, "ᴿ");
+  text = text.replace(/S/g, "⁹");
+  text = text.replace(/T/g, "ᵀ");
+  text = text.replace(/U/g, "ᵁ");
+  text = text.replace(/V/g, "ⱽ");
+  text = text.replace(/W/g, "ᵂ");
+  text = text.replace(/a/g, "ᵃ");
+  text = text.replace(/b/g, "ᵇ");
+  text = text.replace(/c/g, "ᶜ");
+  text = text.replace(/d/g, "ᵈ");
+  text = text.replace(/e/g, "ᵉ");
+  text = text.replace(/f/g, "ᶠ");
+  text = text.replace(/g/g, "ᵍ");
+  text = text.replace(/h/g, "ʰ");
+  text = text.replace(/i/g, "ⁱ");
+  text = text.replace(/j/g, "ʲ");
+  text = text.replace(/k/g, "ᵏ");
+  text = text.replace(/l/g, "ˡ");
+  text = text.replace(/m/g, "ᵐ");
+  text = text.replace(/n/g, "ⁿ");
+  text = text.replace(/o/g, "ᵒ");
+  text = text.replace(/p/g, "ᵖ");
+  text = text.replace(/q/g, "⁹");
+  text = text.replace(/r/g, "ʳ");
+  text = text.replace(/s/g, "ˢ");
+  text = text.replace(/t/g, "ᵗ");
+  text = text.replace(/u/g, "ᵘ");
+  text = text.replace(/v/g, "ᵛ");
+  text = text.replace(/w/g, "ʷ");
+  text = text.replace(/x/g, "ˣ");
+  text = text.replace(/y/g, "ʸ");
+  text = text.replace(/z/g, "ᶻ");
+  text = text.replace(/\+/g, "⁺");
+  text = text.replace(/-/g, "⁻");
+  text = text.replace(/=/g, "⁼");
+  text = text.replace(/\(/g, "⁽");
+  text = text.replace(/\)/g, "⁾");
+
+  text = text.replace(/x/g, "ₓ");
+  return text;
+}
+
 function index_to_accent(word) {
   const m = word.match(/^([^0-9]+)([0-9x]+)$/);
   if (m) {
@@ -61,7 +143,7 @@ function index_to_accent(word) {
       };
       return m[1].replace(/[aiueAIUE]/, accent);
     } else {
-      return word;
+      return m[1] + to_subscript(m[2]);
     }
   } else {
     return word;
@@ -130,3 +212,5 @@ function convert_accent_to_index(text) {
 module.exports.convert = convert;
 module.exports.convert_index_to_accent = convert_index_to_accent;
 module.exports.convert_accent_to_index = convert_accent_to_index;
+module.exports.to_subscript = to_subscript;
+module.exports.to_superscript = to_superscript;

@@ -5,6 +5,8 @@ const {
   convert,
   convert_index_to_accent,
   convert_accent_to_index,
+  to_subscript,
+  to_superscript,
 } = require("./convert");
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -61,6 +63,40 @@ function activate(context) {
         let selection = editor.selection;
         let text = document.getText(selection);
         let converted = convert_accent_to_index(text);
+        editor.edit((editBuilder) => {
+          editBuilder.replace(selection, converted);
+        });
+      }
+    }
+  );
+  context.subscriptions.push(disposable);
+
+  disposable = vscode.commands.registerCommand(
+    "convert-assyriology-translit.convert_to_superscript",
+    function () {
+      let editor = vscode.window.activeTextEditor;
+      if (editor) {
+        let document = editor.document;
+        let selection = editor.selection;
+        let text = document.getText(selection);
+        let converted = to_superscript(text);
+        editor.edit((editBuilder) => {
+          editBuilder.replace(selection, converted);
+        });
+      }
+    }
+  );
+  context.subscriptions.push(disposable);
+
+  disposable = vscode.commands.registerCommand(
+    "convert-assyriology-translit.convert_to_subscript",
+    function () {
+      let editor = vscode.window.activeTextEditor;
+      if (editor) {
+        let document = editor.document;
+        let selection = editor.selection;
+        let text = document.getText(selection);
+        let converted = to_subscript(text);
         editor.edit((editBuilder) => {
           editBuilder.replace(selection, converted);
         });
