@@ -33,6 +33,7 @@ This is our convert table.
 | t_    | ṯ       |
 | j     | ŋ       |
 | g~    | g̃       |
+| g^    | ĝ       |
 | h     | ḫ       |
 | h,    | ḥ       |
 | a^    | â       |

@@ -13,6 +13,8 @@ function convert(text) {
   text = text.replace(/J/g, "Ŋ");
   text = text.replace(/g~/g, "g̃");
   text = text.replace(/G~/g, "G̃");
+  text = text.replace(/g\^/g, "ĝ");
+  text = text.replace(/G\^/g, "Ĝ");
   text = text.replace(/h,/g, "ḥ");
   text = text.replace(/h/g, "ḫ");
   text = text.replace(/H/g, "Ḫ");
