@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [1.6.2] 2024/6/5
+
+add g^ to ĝ conversion
+
 ## [1.6.1] 2023/8/11
 
 add to_superscript
