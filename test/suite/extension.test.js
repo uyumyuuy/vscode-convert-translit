@@ -23,6 +23,7 @@ suite("Extension Test Suite", () => {
       convert("CSZS,T,T_JG~HA^I^U^E^O^A~I~U~E~O~"),
       "ŠŠṢṬṮŊG̃ḪÂÎÛÊÔĀĪŪĒŌ"
     );
+    assert.strictEqual(convert("k, K, [[text]]"), "ḳ Ḳ ⸢text⸣");
   });
 
   test("Convert Index to Accent", () => {
