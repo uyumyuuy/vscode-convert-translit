@@ -6,6 +6,13 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [1.7.0] 2026/10/3
+
+### ADDED
+
+- Add k,/K, conversions to ḳ/Ḳ.
+- Add [[/]] conversions to ⸢/⸣.
+
 ## [1.6.2] 2024/6/5
 
 add g^ to ĝ conversion
