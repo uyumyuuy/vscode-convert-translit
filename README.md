@@ -31,12 +31,15 @@ This is our convert table.
 | s,    | ṣ       |
 | t,    | ṭ       |
 | t_    | ṯ       |
+| k,    | ḳ       |
+| K,    | Ḳ       |
+| [[    | ⸢       |
+| ]]    | ⸣       |
 | j     | ŋ       |
 | g~    | g̃       |
 | g^    | ĝ       |
 | h     | ḫ       |
 | h,    | ḥ       |
-| a^    | â       |
 | a^    | â       |
 | i^    | î       |
 | u^    | û       |
@@ -50,6 +53,10 @@ This is our convert table.
 | `     | ʾ       |
 
 ## Release Notes
+
+### 1.7.0
+
+Add ḳ and half-bracket conversions.
 
 ### 1.0.0
 

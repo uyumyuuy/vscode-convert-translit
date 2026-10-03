@@ -9,6 +9,10 @@ function convert(text) {
   text = text.replace(/T,/g, "Ṭ");
   text = text.replace(/t_/g, "ṯ");
   text = text.replace(/T_/g, "Ṯ");
+  text = text.replace(/k,/g, "ḳ");
+  text = text.replace(/K,/g, "Ḳ");
+  text = text.replace(/\[\[/g, "⸢");
+  text = text.replace(/\]\]/g, "⸣");
   text = text.replace(/j/g, "ŋ");
   text = text.replace(/J/g, "Ŋ");
   text = text.replace(/g~/g, "g̃");

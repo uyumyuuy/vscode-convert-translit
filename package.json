@@ -2,7 +2,7 @@
   "name": "convert-assyriology-translit",
   "displayName": "Convert Assyriology Translit",
   "description": "The extension convert assyriological transliteration from ascii-style to unicode",
-  "version": "1.6.2",
+  "version": "1.7.0",
   "engines": {
     "vscode": "^1.0.0"
   },
